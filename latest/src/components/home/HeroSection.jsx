@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FiArrowRight, FiPlay } from 'react-icons/fi';
+import { FiArrowRight } from 'react-icons/fi';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
 import HeroStats from './HeroStats';
@@ -89,10 +89,6 @@ const HeroSection = () => {
                       <a href="/projects" className="btn btn-primary btn-lg">
                         Explore Projects <FiArrowRight />
                       </a>
-                      <button className="video-btn">
-                        <span className="play-icon"><FiPlay /></span>
-                        <span>Watch Video</span>
-                      </button>
                     </div>
                   </motion.div>
                 </div>

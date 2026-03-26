@@ -17,12 +17,12 @@ const InitialLoader = () => {
         if (prev >= 90 && !isWindowLoaded) return 90;
         if (prev >= 100) {
           clearInterval(progressTimer);
-          setTimeout(() => setLoading(false), 300);
+          setTimeout(() => setLoading(false), 100);
           return 100;
         }
-        return prev + 1;
+        return prev + (isWindowLoaded ? 5 : 2);
       });
-    }, 50);
+    }, 20);
 
     // 2. Real window load event
     const handleLoad = () => {
