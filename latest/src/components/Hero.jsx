@@ -6,7 +6,7 @@ const FloatingCard = ({ icon: Icon, title, value, color, delay, position }) => (
     initial={{ opacity: 0, y: 20, scale: 0.8 }}
     animate={{ opacity: 1, y: 0, scale: 1 }}
     transition={{ delay, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-    className={`absolute ${position} z-20 hidden md:flex items-center gap-4 px-6 py-4 glass-card glass-l4 border-white/10 animate-float shadow-2xl`}
+    className={`absolute ${position} z-20 hidden md:flex items-center gap-4 px-6 py-4 border-white/10 animate-float shadow-2xl`}
     style={{ animationDelay: `${delay}s` }}
   >
     <div className={`w-10 h-10 rounded-xl flex items-center justify-center bg-${color}-500/20 text-${color}-500 shadow-lg shadow-${color}-500/10`}>
@@ -66,7 +66,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="inline-flex items-center gap-3 px-5 py-2.5 glass-card glass-l2 border-white/10 mb-10 group cursor-default"
+            className="inline-flex items-center gap-3 px-5 py-2.5 border-white/10 mb-10 group cursor-default"
           >
             <span className="relative flex h-3 w-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
@@ -130,7 +130,7 @@ const Hero = () => {
             <a
               href="#about"
               onClick={(e) => handleScrollTo(e, 'about')}
-              className="px-10 py-5 glass-card glass-l1 border-white/20 text-white font-bold rounded-2xl transition-all duration-500 hover:bg-white/10 hover:border-white/40 hover:-translate-y-1.5 active:scale-95"
+              className="px-10 py-5 border-white/20 text-white font-bold rounded-2xl transition-all duration-500 hover:bg-white/10 hover:border-white/40 hover:-translate-y-1.5 active:scale-95"
             >
               Explore Legacy
             </a>
@@ -151,7 +151,7 @@ const Hero = () => {
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 1.4 + (i * 0.2), duration: 0.6 }}
-                  className="px-6 py-3 glass-card glass-l1 border-white/5 opacity-50 hover:opacity-100 hover:border-white/20 hover:bg-white/5 transition-all duration-500 cursor-default flex items-center shadow-lg"
+                  className="px-6 py-3 border-white/5 opacity-50 hover:opacity-100 hover:border-white/20 hover:bg-white/5 transition-all duration-500 cursor-default flex items-center shadow-lg"
                 >
                   <img src={logo.src} alt={logo.alt} className="h-6 filter grayscale brightness-200 contrast-75" />
                 </motion.div>
@@ -190,7 +190,7 @@ const Hero = () => {
         initial={{ opacity: 0, scale: 0.5, rotate: -20 }}
         animate={{ opacity: 1, scale: 1, rotate: -15 }}
         transition={{ delay: 3, duration: 1 }}
-        className="absolute top-[15%] left-[10%] z-20 hidden xl:flex items-center gap-3 px-6 py-4 glass-card glass-l3 border-white/10 rotate-[-15deg] shadow-3xl animate-float"
+        className="absolute top-[15%] left-[10%] z-20 hidden xl:flex items-center gap-3 px-6 py-4 border-white/10 rotate-[-15deg] shadow-3xl animate-float"
       >
         <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center text-accent">
           <FiStar size={24} fill="currentColor" />
@@ -209,7 +209,7 @@ const Hero = () => {
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 z-30"
       >
         <span className="text-[10px] uppercase font-bold text-white/20 tracking-[0.4em] mb-4 [writing-mode:vertical-lr]">Discover</span>
-        <div className="w-6 h-10 rounded-full border border-white/10 flex justify-center p-1.5 glass-card glass-l1">
+        <div className="w-6 h-10 rounded-full border border-white/10 flex justify-center p-1.5">
           <motion.div 
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}

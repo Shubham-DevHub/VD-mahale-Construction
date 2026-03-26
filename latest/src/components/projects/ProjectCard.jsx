@@ -25,7 +25,7 @@ const ProjectCard = ({ title, category, status, value, location, client, size, d
       onMouseMove={onMouseMove}
       onMouseLeave={handleMouseLeave}
       style={tiltStyles}
-      className="group glass-card glass-l2 h-full flex flex-col hover:border-accent/50 hover:shadow-glow-orange/10 transition-all duration-700 overflow-hidden relative"
+      className="group h-full flex flex-col hover:border-accent/50 hover:shadow-glow-orange/10 transition-all duration-700 overflow-hidden relative border border-white/5 bg-navy-900/50"
     >
       {/* Image Area */}
       <div className="h-64 relative overflow-hidden">
@@ -37,13 +37,13 @@ const ProjectCard = ({ title, category, status, value, location, client, size, d
         />
         
         {/* Status Badge */}
-        <div className={`absolute top-4 right-4 px-4 py-1.5 glass-card glass-l3 border-white/20 flex items-center gap-2 backdrop-blur-md`}>
+        <div className={`absolute top-4 right-4 px-4 py-1.5 border-white/20 flex items-center gap-2 backdrop-blur-md bg-black/40`}>
           <div className={`w-2 h-2 rounded-full bg-${statusColor}-500 animate-pulse`} />
           <span className={`text-[10px] font-bold uppercase tracking-wider text-${statusColor}-500`}>{status}</span>
         </div>
 
         {/* Value Badge */}
-        <div className="absolute bottom-4 left-4 px-4 py-2 glass-card glass-l4 border-white/10 backdrop-blur-xl">
+        <div className="absolute bottom-4 left-4 px-4 py-2 border-white/10 backdrop-blur-xl bg-black/40">
           <p className="text-[10px] font-bold uppercase tracking-widest text-white/50 mb-0.5">Project Value</p>
           <p className="text-lg font-bold text-white font-mono tracking-tighter">
             <span className="text-accent">₹</span> {value} <span className="text-xs font-medium text-white/60">Cr +</span>

@@ -103,7 +103,7 @@ const Contact = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 0.3 + (i * 0.1) }}
-                  className="glass-card glass-l1 p-6 flex gap-5 group hover:border-accent/30 transition-all duration-500"
+                  className="p-6 flex gap-5 group hover:border-accent/30 transition-all duration-500 bg-navy-900/40 border border-white/5 rounded-2xl"
                 >
                   <div className={`w-14 h-14 rounded-2xl flex items-center justify-center bg-white/5 border border-white/10 text-accent group-hover:scale-110 group-hover:shadow-glow-orange transition-all duration-500`}>
                     <info.icon size={24} />
@@ -123,7 +123,7 @@ const Contact = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.8 }}
-              className="glass-card glass-l2 border-white/10 h-[240px] overflow-hidden group"
+              className="border-white/10 h-[240px] overflow-hidden group bg-navy-900/20 border rounded-2xl"
             >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.2!2d73.8475!3d18.5177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf!2sPune!5e0!3m2!1sen!2sin!4v1650000000000!"
@@ -145,7 +145,7 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
             className="lg:col-span-7"
           >
-            <form onSubmit={handleSubmit} className="glass-card glass-l2 border-white/20 p-8 md:p-12 shadow-2xl relative overflow-hidden">
+            <form onSubmit={handleSubmit} className="border-white/20 p-8 md:p-12 shadow-2xl relative overflow-hidden bg-navy-900/60 border rounded-[2.5rem]">
               {/* Shine Effect */}
               <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] bg-gradient-to-br from-transparent via-white/[0.03] to-transparent rotate-[45deg] pointer-events-none" />
 
@@ -160,7 +160,7 @@ const Contact = () => {
                     required
                     aria-label="Your Full Name"
                     placeholder="e.g. Rahul Sharma"
-                    className="w-full px-6 py-4 rounded-xl glass-card glass-l1 !bg-transparent border-white/10 focus:border-accent focus:shadow-glow-orange focus:scale-[1.01] outline-none transition-all placeholder:text-white/20"
+                    className="w-full px-6 py-4 rounded-xl !bg-transparent border-white/10 focus:border-accent focus:shadow-glow-orange focus:scale-[1.01] outline-none transition-all placeholder:text-white/20 bg-black/20 border"
                   />
                 </div>
                 <div className="space-y-2">
@@ -173,7 +173,7 @@ const Contact = () => {
                     required
                     aria-label="Your Email Address"
                     placeholder="rahul@example.com"
-                    className="w-full px-6 py-4 rounded-xl glass-card glass-l1 !bg-transparent border-white/10 focus:border-accent focus:shadow-glow-orange focus:scale-[1.01] outline-none transition-all placeholder:text-white/20"
+                    className="w-full px-6 py-4 rounded-xl !bg-transparent border-white/10 focus:border-accent focus:shadow-glow-orange focus:scale-[1.01] outline-none transition-all placeholder:text-white/20 bg-black/20 border"
                   />
                 </div>
               </div>
@@ -187,7 +187,7 @@ const Contact = () => {
                   onChange={handleChange}
                   aria-label="Your Phone Number"
                   placeholder="+91 98765 43210"
-                  className="w-full px-6 py-4 rounded-xl glass-card glass-l1 !bg-transparent border-white/10 focus:border-accent focus:shadow-glow-orange outline-none transition-all placeholder:text-white/20"
+                  className="w-full px-6 py-4 rounded-xl !bg-transparent border-white/10 focus:border-accent focus:shadow-glow-orange outline-none transition-all placeholder:text-white/20 bg-black/20 border"
                 />
               </div>
 
@@ -201,7 +201,7 @@ const Contact = () => {
                   rows="5"
                   aria-label="Project Details or Message"
                   placeholder="Tell us about your infrastructure goals..."
-                  className="w-full px-6 py-4 rounded-xl glass-card glass-l1 !bg-transparent border-white/10 focus:border-accent focus:shadow-glow-orange outline-none transition-all resize-none placeholder:text-white/20"
+                  className="w-full px-6 py-4 rounded-xl !bg-transparent border-white/10 focus:border-accent focus:shadow-glow-orange outline-none transition-all resize-none placeholder:text-white/20 bg-black/20 border"
                 />
               </div>
 

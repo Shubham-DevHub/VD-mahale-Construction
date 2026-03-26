@@ -1,20 +1,20 @@
 .why-section {
-  padding: 100px 0;
+  padding: var(--space-4xl) 0;
   background-color: var(--bg-white);
 }
 
 .why-grid {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
-  gap: 80px;
+  gap: var(--space-3xl);
   align-items: center;
 }
 
 .reasons-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-top: 40px;
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
 }
 
 .reason-item {
@@ -65,21 +65,27 @@
 
 .experience-badge {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -20px;
+  left: -20px;
   width: 180px;
   height: 180px;
   background-color: var(--primary-blue);
-  color: white;
+  color: var(--text-inverse);
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 10px solid white;
-  box-shadow: var(--shadow-lg);
+  border: 10px solid var(--bg-page);
+  box-shadow: 0 20px 40px rgba(0, 51, 102, 0.15);
   z-index: 5;
+  transition: all 0.5s var(--transition-smooth);
+}
+
+.experience-badge:hover {
+  transform: scale(1.05) rotate(-3deg);
+  box-shadow: 0 30px 60px rgba(0, 51, 102, 0.25);
 }
 
 .experience-badge span {

@@ -23,7 +23,7 @@ const Media = () => {
           marginTop: '50px' 
         }}>
           {newsData.map((item, index) => (
-            <div key={item.id} className="news-card glass-card" data-aos="fade-up" data-aos-delay={index * 100} style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: 'var(--radius-xl)', overflow: 'hidden' }}>
+            <div key={item.id} className="news-card" data-aos="fade-up" data-aos-delay={index * 100} style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: 'var(--radius-xl)', overflow: 'hidden' }}>
 
               <div className="news-img" style={{ height: '240px', overflow: 'hidden' }}>
                 <img src={item.thumbnail} alt={item.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />

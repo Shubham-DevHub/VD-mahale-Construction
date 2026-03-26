@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 // Components
 import Navbar from './components/common/Navbar';
-import BottomBar from './components/common/BottomBar';
+
 import Footer from './components/common/Footer';
 import FloatingButtons from './components/common/FloatingButtons';
 import ScrollToTop from './components/common/ScrollToTop';
@@ -51,7 +51,7 @@ function App() {
       <ScrollProgress />
       <InitialLoader />
       <Navbar />
-      <BottomBar />
+
       <FloatingButtons />
       <ScrollToTop />
       <CookieConsent />

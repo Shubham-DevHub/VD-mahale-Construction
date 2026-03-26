@@ -122,7 +122,7 @@ const Testimonials = () => {
                 }}
                 className="absolute inset-0 cursor-grab active:cursor-grabbing"
               >
-              <div className="h-full glass-card glass-l2 border-white/10 p-8 md:p-16 flex flex-col md:flex-row items-center gap-10 md:gap-16 relative overflow-hidden">
+              <div className="h-full border-white/10 p-8 md:p-16 flex flex-col md:flex-row items-center gap-10 md:gap-16 relative overflow-hidden">
                 {/* Large Background Quote */}
                 <FaQuoteLeft className="absolute top-[-20px] left-[-20px] text-white/5 text-[200px] -z-10" />
                 
@@ -172,13 +172,13 @@ const Testimonials = () => {
           <div className="absolute -bottom-12 md:bottom-auto md:top-1/2 md:-translate-y-1/2 left-0 right-0 flex justify-center md:justify-between px-4 md:-px-12 gap-8 z-20">
             <button
               onClick={prev}
-              className="w-12 h-12 rounded-xl glass-card glass-l1 text-white hover:bg-accent hover:border-accent transition-all duration-300 flex items-center justify-center shadow-lg"
+              className="w-12 h-12 rounded-xl text-white hover:bg-accent hover:border-accent transition-all duration-300 flex items-center justify-center shadow-lg"
             >
               <FiChevronLeft size={24} />
             </button>
             <button
               onClick={next}
-              className="w-12 h-12 rounded-xl glass-card glass-l1 text-white hover:bg-accent hover:border-accent transition-all duration-300 flex items-center justify-center shadow-lg"
+              className="w-12 h-12 rounded-xl text-white hover:bg-accent hover:border-accent transition-all duration-300 flex items-center justify-center shadow-lg"
             >
               <FiChevronRight size={24} />
             </button>

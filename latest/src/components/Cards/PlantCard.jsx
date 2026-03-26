@@ -14,7 +14,7 @@ const PlantCard = ({ name, type, capacity, status, image, delay = 0 }) => {
       onMouseMove={onMouseMove}
       onMouseLeave={handleMouseLeave}
       style={tiltStyles}
-      className="group glass-card glass-l2 border-white/5 hover:border-accent/40 transition-all duration-500 overflow-hidden shadow-2xl flex flex-col h-full"
+      className="group border-white/5 hover:border-accent/40 transition-all duration-500 overflow-hidden shadow-2xl flex flex-col h-full bg-navy-900/50 border rounded-2xl"
     >
       {/* Visual Header */}
       <div className="h-60 relative overflow-hidden bg-black/20">
@@ -26,7 +26,7 @@ const PlantCard = ({ name, type, capacity, status, image, delay = 0 }) => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#0B1121] via-transparent to-transparent" />
         
         {/* Status Badge */}
-        <div className="absolute top-4 right-4 flex items-center gap-2 px-3 py-1 glass-card glass-l3 border-white/10">
+        <div className="absolute top-4 right-4 flex items-center gap-2 px-3 py-1 border-white/10 bg-black/40 border rounded-lg">
           <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
           <span className="text-[9px] font-black uppercase tracking-widest text-green-500">{status}</span>
         </div>
@@ -40,12 +40,12 @@ const PlantCard = ({ name, type, capacity, status, image, delay = 0 }) => {
         </div>
 
         <div className="grid grid-cols-2 gap-4">
-          <div className="p-4 glass-card glass-l3 border-white/5 flex flex-col gap-2 group/stat hover:bg-accent/5 transition-all">
+          <div className="p-4 border-white/5 flex flex-col gap-2 group/stat hover:bg-accent/5 transition-all bg-black/20 border rounded-xl">
             <FiZap className="text-accent" size={16} />
             <p className="text-[10px] font-black uppercase tracking-widest text-white/20">Capacity Index</p>
             <p className="text-sm font-bold text-white font-mono">{capacity}</p>
           </div>
-          <div className="p-4 glass-card glass-l3 border-white/5 flex flex-col gap-2 group/stat hover:bg-blue-400/5 transition-all">
+          <div className="p-4 border-white/5 flex flex-col gap-2 group/stat hover:bg-blue-400/5 transition-all bg-black/20 border rounded-xl">
             <FiBox className="text-blue-400" size={16} />
             <p className="text-[10px] font-black uppercase tracking-widest text-white/20">Asset ID</p>
             <p className="text-sm font-bold text-white font-mono">VDM-P7</p>

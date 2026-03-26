@@ -31,7 +31,7 @@ const FloatingActions = () => {
           exit={{ scale: 0, opacity: 0 }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="md:hidden floating-btn glass-l3 btn-phone"
+          className="md:hidden floating-btn btn-phone border border-white/10 bg-black/60 backdrop-blur-md shadow-2xl"
         >
            <FiPhone size={24} />
         </motion.a>
@@ -62,7 +62,7 @@ const FloatingActions = () => {
             onClick={scrollToTop}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="hidden md:flex floating-btn glass-l2 btn-totop"
+            className="hidden md:flex floating-btn btn-totop border border-white/10 bg-black/40 backdrop-blur-sm shadow-xl"
           >
             <FiArrowUp size={24} />
           </motion.button>

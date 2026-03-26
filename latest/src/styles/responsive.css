@@ -12,21 +12,7 @@
   --font-display: clamp(3.5rem, 3rem + 5vw, 8rem);
 }
 
-/* Performance-Optimized Glass Fallbacks for Mobile */
-@media (max-width: 768px) {
-  .glass-card, .premium-card-base, .glass-navbar {
-    /* Reduce blur complexity for mobile GPUs */
-    backdrop-filter: blur(10px) saturate(120%);
-    -webkit-backdrop-filter: blur(10px) saturate(120%);
-  }
-}
-
-/* Prevent layout shift during page transitions on mobile */
+/* Layout Shift Prevention */
 .page-wrapper {
   min-height: calc(100vh - var(--nav-height));
-  padding-bottom: 80px; /* Space for BottomBar on mobile */
-}
-
-@media (min-width: 769px) {
-  .page-wrapper { padding-bottom: 0; }
 }

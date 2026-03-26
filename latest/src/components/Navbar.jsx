@@ -76,7 +76,7 @@ const Navbar = () => {
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 overflow-visible ${
           scrolled
-            ? 'h-[75px] glass-card glass-l3 !rounded-none border-b border-white/5 shadow-2xl'
+            ? 'h-[75px] border-b border-white/5 shadow-2xl'
             : 'h-[100px] bg-transparent'
         }`}
       >
@@ -107,7 +107,7 @@ const Navbar = () => {
 
           {/* Desktop Dashboard Segmented Nav */}
           <div className="hidden lg:flex items-center gap-8 h-full">
-            <div className="relative flex items-center p-1.5 glass-card glass-l1 border-white/10 rounded-2xl h-[56px]">
+            <div className="relative flex items-center p-1.5 border-white/10 rounded-2xl h-[56px]">
               {navLinks.map((link) => {
                 const isActive = activeLink === link.href;
                 const isServices = link.name === 'Services';
@@ -150,7 +150,7 @@ const Navbar = () => {
                             animate={{ opacity: 1, y: 0, scale: 1 }}
                             exit={{ opacity: 0, y: 15, scale: 0.95 }}
                             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                            className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[600px] glass-card glass-l4 border-white/10 p-8 shadow-3xl pointer-events-auto"
+                            className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-[600px] border-white/10 p-8 shadow-3xl pointer-events-auto"
                           >
                             <div className="grid grid-cols-2 gap-8">
                               {serviceHighlights.map((s) => (
@@ -207,7 +207,7 @@ const Navbar = () => {
             <button
               onClick={() => setMobileOpen(true)}
               aria-label="Open navigation menu"
-              className={`p-3 rounded-2xl glass-card glass-l2 border-white/10 ${
+              className={`p-3 rounded-2xl border-white/10 ${
                 scrolled ? 'text-heading' : 'text-white'
               } hover:scale-110 active:scale-95 transition-all`}
             >
@@ -233,7 +233,7 @@ const Navbar = () => {
               animate={{ x: 0 }}
               exit={{ x: '100vw' }}
               transition={{ type: 'spring', damping: 25, stiffness: 150 }}
-              className="fixed top-0 right-0 w-[85%] h-full glass-card glass-l3 !bg-[#0B1121]/95 !rounded-none z-[110] shadow-3xl flex flex-col border-l border-white/5"
+              className="fixed top-0 right-0 w-[85%] h-full !bg-[#0B1121]/95 !rounded-none z-[110] shadow-3xl flex flex-col border-l border-white/5"
             >
               {/* Mobile Header */}
               <div className="p-8 flex items-center justify-between border-b border-white/5">
@@ -243,7 +243,7 @@ const Navbar = () => {
                 </div>
                 <button 
                   onClick={() => setMobileOpen(false)}
-                  className="w-11 h-11 rounded-2xl glass-card glass-l2 border-white/10 text-white flex items-center justify-center hover:bg-white/10"
+                  className="w-11 h-11 rounded-2xl border-white/10 text-white flex items-center justify-center hover:bg-white/10"
                 >
                   <HiX size={24} />
                 </button>
@@ -257,7 +257,7 @@ const Navbar = () => {
                   <input 
                     type="text" 
                     placeholder="Search Infrastructure..." 
-                    className="w-full pl-14 pr-6 py-4 rounded-2xl glass-card glass-l1 !bg-white/5 border-white/5 text-white text-sm outline-none focus:border-accent/30 transition-all font-medium"
+                    className="w-full pl-14 pr-6 py-4 rounded-2xl !bg-white/5 border-white/5 text-white text-sm outline-none focus:border-accent/30 transition-all font-medium"
                   />
                 </div>
 
@@ -273,7 +273,7 @@ const Navbar = () => {
                       onClick={(e) => handleNavClick(e, link.href)}
                       className={`flex items-center justify-between px-8 py-6 rounded-2xl transition-all duration-300 ${
                         activeLink === link.href
-                          ? 'glass-card glass-l1 !bg-accent/10 border-accent/30 text-accent shadow-glow-orange/10'
+                          ? '!bg-accent/10 border-accent/30 text-accent shadow-glow-orange/10'
                           : 'border-transparent text-white/40 hover:text-white hover:bg-white/5'
                       }`}
                     >
@@ -295,7 +295,7 @@ const Navbar = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 }}
                     href="tel:+911234567890" 
-                    className="flex flex-col items-center gap-3 p-6 glass-card glass-l1 border-white/5 rounded-3xl hover:border-accent/30 group"
+                    className="flex flex-col items-center gap-3 p-6 border-white/5 rounded-3xl hover:border-accent/30 group"
                   >
                     <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-accent group-hover:scale-110 transition-transform">
                       <FiPhone size={18} />
@@ -307,7 +307,7 @@ const Navbar = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.6 }}
                     href="https://wa.me/911234567890" 
-                    className="flex flex-col items-center gap-3 p-6 glass-card glass-l1 border-white/5 rounded-3xl hover:border-green-500/30 group"
+                    className="flex flex-col items-center gap-3 p-6 border-white/5 rounded-3xl hover:border-green-500/30 group"
                   >
                     <div className="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center text-green-500 group-hover:scale-110 transition-transform">
                       <FaWhatsapp size={20} />

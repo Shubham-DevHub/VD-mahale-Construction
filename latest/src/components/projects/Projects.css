@@ -29,8 +29,8 @@
 }
 
 .filter-btn {
-  background: none;
-  border: none;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-light);
   padding: 8px 20px;
   border-radius: 20px;
   font-size: 14px;
@@ -42,11 +42,14 @@
 
 .filter-btn:hover {
   color: var(--accent-orange);
+  border-color: var(--accent-orange);
 }
 
 .filter-btn.active {
-  background-color: var(--accent-orange-bg);
-  color: var(--accent-orange);
+  background-color: var(--accent-orange);
+  color: white;
+  border-color: var(--accent-orange);
+  box-shadow: var(--shadow-orange);
 }
 
 .gallery-grid {
@@ -56,12 +59,11 @@
 }
 
 .gallery-card {
-  background-color: white;
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border-light);
   border-radius: var(--radius-xl);
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
   transition: var(--transition-normal);
-  border: 1px solid var(--border-light);
 }
 
 .gallery-card:hover {

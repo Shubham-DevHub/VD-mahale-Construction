@@ -25,7 +25,7 @@ const LatestNews = () => {
               data-aos-delay={index * 100}
             >
               <div className="news-img">
-                <img src={item.thumbnail} alt={item.title} />
+                <img src={item.thumbnail} alt={item.title} loading="lazy" />
                 <div className="news-date">
                   <FiCalendar /> {item.date}
                 </div>

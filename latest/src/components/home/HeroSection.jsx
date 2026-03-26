@@ -57,6 +57,8 @@ const HeroSection = () => {
         autoplay={{ delay: 6000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         loop={true}
+        speed={1000} // Smoother transition
+        grabCursor={true}
         className="hero-swiper"
       >
         {slides.map((slide) => (
@@ -77,6 +79,7 @@ const HeroSection = () => {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
+                    className="p-8 sm:p-12 max-w-4xl bg-navy-900/40 border border-white/5 rounded-3xl backdrop-blur-sm"
                   >
                     <span className="hero-label">Class A Registered Contractor</span>
                     <h1 className="hero-title">{slide.title}</h1>

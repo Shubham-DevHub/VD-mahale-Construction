@@ -14,7 +14,7 @@ const TeamCard = ({ name, role, image, bio, delay = 0 }) => {
       onMouseMove={onMouseMove}
       onMouseLeave={handleMouseLeave}
       style={tiltStyles}
-      className="group glass-card glass-l2 p-4 pb-8 flex flex-col h-full hover:border-accent/40 hover:shadow-glow-orange/10 transition-all duration-500 overflow-visible"
+      className="group p-4 pb-8 flex flex-col h-full hover:border-accent/40 hover:shadow-glow-orange/10 transition-all duration-500 overflow-visible bg-navy-900/40 border border-white/5 rounded-[2rem]"
     >
       {/* Image Area with Inner Frame */}
       <div className="relative aspect-[4/5] rounded-3xl overflow-hidden mb-8">
@@ -26,7 +26,7 @@ const TeamCard = ({ name, role, image, bio, delay = 0 }) => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#0B1121]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         
         {/* Social Pill Overlay */}
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2 p-1.5 glass-card glass-l3 border-white/10 rounded-2xl translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 backdrop-blur-md">
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2 p-1.5 border-white/10 rounded-2xl translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 backdrop-blur-md bg-black/40 border">
           <a href="#" className="w-9 h-9 flex items-center justify-center rounded-xl bg-white/5 hover:bg-accent hover:text-white transition-all"><FiLinkedin size={18} /></a>
           <a href="#" className="w-9 h-9 flex items-center justify-center rounded-xl bg-white/5 hover:bg-black hover:text-white transition-all"><FiTwitter size={18} /></a>
           <a href="#" className="w-9 h-9 flex items-center justify-center rounded-xl bg-white/5 hover:bg-accent hover:text-white transition-all"><FiMail size={18} /></a>

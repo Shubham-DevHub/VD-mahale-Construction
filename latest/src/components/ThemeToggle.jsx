@@ -8,7 +8,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleDarkMode}
-      className={`relative w-16 h-8 rounded-full p-1 transition-all duration-300 glass-card glass-l1 ${
+      className={`relative w-16 h-8 rounded-full p-1 transition-all duration-300 border border-white/10 ${
         darkMode ? 'bg-navy-900/50' : 'bg-gray-200/50'
       }`}
       aria-label="Toggle dark mode"

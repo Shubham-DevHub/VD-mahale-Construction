@@ -73,7 +73,7 @@ const WhyChooseUs = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 + (i * 0.1), duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="group glass-card glass-l2 border-white/5 p-8 hover:border-accent/40 hover:-translate-y-2 transition-all duration-500 shadow-xl"
+              className="group border-white/5 p-8 hover:border-accent/40 hover:-translate-y-2 transition-all duration-500 shadow-xl"
             >
               <div className={`w-14 h-14 rounded-2xl flex items-center justify-center bg-accent/10 text-accent mb-8 group-hover:scale-110 group-hover:shadow-glow-orange transition-all duration-500`}>
                 <feature.icon size={26} />
@@ -109,7 +109,7 @@ const WhyChooseUs = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.8, duration: 1 }}
-          className="mt-24 relative rounded-[2rem] overflow-hidden glass-card glass-l1 p-4 shadow-2xl"
+          className="mt-24 relative rounded-[2rem] overflow-hidden p-4 shadow-2xl"
         >
           <div className="relative h-[400px] rounded-[1.5rem] overflow-hidden">
             <img 

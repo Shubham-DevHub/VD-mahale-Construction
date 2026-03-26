@@ -35,9 +35,15 @@
 .hero-text-container {
   max-width: 900px;
   color: white;
-  padding-top: 120px;
   position: relative;
   z-index: 10;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text-container .glass-card {
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .hero-label {
@@ -62,7 +68,7 @@
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(48px, 6vw, 84px);
+  font-size: clamp(40px, 5.5vw, 76px);
   font-weight: 800;
   line-height: 1.05;
   letter-spacing: -2px;

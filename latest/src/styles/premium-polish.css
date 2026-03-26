@@ -39,16 +39,15 @@
   will-change: transform, opacity;
 }
 
-.gpu-accelerated {
+.gpu-accelerated, .btn-premium-pilled, .hero-bg {
   transform: translateZ(0);
   backface-visibility: hidden;
+  perspective: 1000px;
 }
 
 /* Reduced Blur for low-end devices / mobile */
 @media (max-width: 768px) {
-  .glass-card, .premium-card-base, .glass-navbar {
-    backdrop-filter: blur(8px) saturate(150%);
-    -webkit-backdrop-filter: blur(8px) saturate(150%);
+  .premium-card-base {
     transition: none !important; /* Disable complex transitions on mobile for FPS */
   }
   
@@ -113,3 +112,5 @@
   white-space: nowrap;
   border-width: 0;
 }
+
+

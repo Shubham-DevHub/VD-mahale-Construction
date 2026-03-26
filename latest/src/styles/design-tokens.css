@@ -5,51 +5,7 @@
 
 :root {
   /* ===================================================================
-     SECTION 1: GLASSMORPHISM POLISH SYSTEM
-     =================================================================== */
-
-  /* GLASS LEVEL 1 — Whisper Glass (Badges, Tags, Stat Pills) */
-  --glass-l1-bg: rgba(255, 255, 255, 0.4);
-  --glass-l1-blur: 12px;
-  --glass-l1-border: rgba(255, 255, 255, 0.35);
-  --glass-l1-shadow: 0 2px 16px rgba(0, 0, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.6);
-  --glass-l1-radius: 12px;
-
-  /* GLASS LEVEL 2 — Soft Glass (Content Cards, Service Cards, Project Cards) */
-  --glass-l2-bg: rgba(255, 255, 255, 0.52);
-  --glass-l2-blur: 20px;
-  --glass-l2-saturate: 140%;
-  --glass-l2-border: rgba(255, 255, 255, 0.4);
-  --glass-l2-shadow: 0 8px 32px rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.7);
-  --glass-l2-radius: 20px;
-
-  /* GLASS LEVEL 3 — Bold Glass (Navigation Bar, Modals, Feature Panels) */
-  --glass-l3-bg: rgba(255, 255, 255, 0.7);
-  --glass-l3-blur: 40px;
-  --glass-l3-saturate: 180%;
-  --glass-l3-border: rgba(255, 255, 255, 0.5);
-  --glass-l3-shadow: 0 12px 48px rgba(0, 0, 0, 0.08), inset 0 2px 0 rgba(255, 255, 255, 0.8);
-  --glass-l3-radius: 24px;
-
-  /* GLASS LEVEL 4 — Deep Glass (Dark Overlays, Hero Floating Cards) */
-  --glass-l4-bg: rgba(10, 22, 40, 0.55);
-  --glass-l4-blur: 24px;
-  --glass-l4-border: rgba(255, 255, 255, 0.08);
-  --glass-l4-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.05);
-  --glass-l4-radius: 20px;
-
-  /* GLASS LEVEL 5 — Accent Glass (CTA Sections, Special Highlights) */
-  --glass-l5-bg: linear-gradient(135deg, rgba(245, 124, 32, 0.08) 0%, rgba(10, 143, 150, 0.05) 50%, rgba(0, 51, 102, 0.04) 100%);
-  --glass-l5-blur: 24px;
-  --glass-l5-border: rgba(245, 124, 32, 0.12);
-  --glass-l5-shadow: 0 8px 40px rgba(245, 124, 32, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  --glass-l5-radius: 24px;
-
-  /* NOISE TEXTURE */
-  --noise-texture: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
-
-  /* ===================================================================
-     SECTION 2: VISUALLY BALANCED COLOR SYSTEM (Light Mode)
+     SECTION 1: VISUALLY BALANCED COLOR SYSTEM (Light Mode)
      =================================================================== */
 
   /* PAGE BACKGROUNDS */
@@ -62,13 +18,13 @@
   --bg-dark-section: #0A1628;
 
   /* TEXT HIERARCHY */
-  --text-heading: #0C1A2B;
-  --text-subheading: #1A2F47;
-  --text-body: #3B4E62;
-  --text-secondary: #5E7389;
-  --text-muted: #8C9DB1;
-  --text-placeholder: #ABB8C7;
-  --text-inverse: #F1F5F9;
+  --text-heading: #0F172A;
+  --text-subheading: #1E293B;
+  --text-body: #334155;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --text-placeholder: #94A3B8;
+  --text-inverse: #F8FAFC;
 
   /* PRIMARY PALETTE — Deep Trust Blue */
   --primary-500: #003366;
@@ -109,6 +65,17 @@
   --blob-2: rgba(0, 51, 102, 0.08);
   --blob-3: rgba(10, 143, 150, 0.06);
 
+  /* BUTTON & GRADIENT SYSTEM */
+  --btn-gradient: linear-gradient(135deg, #F57C20 0%, #FF9A44 100%);
+  --btn-gradient-hover: linear-gradient(135deg, #FF9A44 0%, #F57C20 100%);
+  --btn-shadow: rgba(245, 124, 32, 0.35);
+  --btn-shadow-hover: rgba(245, 124, 32, 0.5);
+
+  /* COMPONENT MISSING TOKENS */
+  --text-nav: #1E293B;
+  --accent-light: #FFBA6B;
+  --text-inverse-secondary: rgba(255, 255, 255, 0.7);
+
   /* TYPOGRAPHY STANDARDS */
   --font-display: 'Outfit', 'Plus Jakarta Sans', sans-serif;
   --font-heading: 'Plus Jakarta Sans', sans-serif;
@@ -119,6 +86,26 @@
   --radius-md: 12px;
   --radius-lg: 16px;
   --radius-xl: 24px;
+  
+  /* FOOTER SPECIFIC */
+  --bg-footer: #0A1628;
+  --text-footer: #FFFFFF;
+  --text-footer-muted: rgba(255, 255, 255, 0.6);
+
+  /* ===================================================================
+     SECTION 2: PROPORTIONAL SPACING SYSTEM
+     =================================================================== */
+  --space-unit: 4px;
+  --space-xxs: calc(var(--space-unit) * 1);  /* 4px */
+  --space-xs: calc(var(--space-unit) * 2);   /* 8px */
+  --space-sm: calc(var(--space-unit) * 4);   /* 16px */
+  --space-md: calc(var(--space-unit) * 6);   /* 24px */
+  --space-lg: calc(var(--space-unit) * 8);   /* 32px */
+  --space-xl: calc(var(--space-unit) * 12);  /* 48px */
+  --space-2xl: calc(var(--space-unit) * 16); /* 64px */
+  --space-3xl: calc(var(--space-unit) * 20); /* 80px */
+  --space-4xl: calc(var(--space-unit) * 24); /* 96px */
+  --space-section: var(--space-4xl);
 }
 
 /* ===================================================================
@@ -126,27 +113,6 @@
    =================================================================== */
 
 html[data-theme="dark"] {
-  /* DARK GLASS OVERRIDES */
-  --glass-l1-bg: rgba(255, 255, 255, 0.04);
-  --glass-l1-border: rgba(255, 255, 255, 0.06);
-  --glass-l1-shadow: 0 2px 16px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.03);
-
-  --glass-l2-bg: rgba(255, 255, 255, 0.05);
-  --glass-l2-border: rgba(255, 255, 255, 0.07);
-  --glass-l2-shadow: 0 8px 32px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.04);
-
-  --glass-l3-bg: rgba(15, 23, 42, 0.72);
-  --glass-l3-border: rgba(255, 255, 255, 0.08);
-  --glass-l3-shadow: 0 12px 48px rgba(0, 0, 0, 0.35), inset 0 2px 0 rgba(255, 255, 255, 0.04);
-
-  --glass-l4-bg: rgba(2, 6, 15, 0.6);
-  --glass-l4-border: rgba(255, 255, 255, 0.05);
-  --glass-l4-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.03);
-
-  --glass-l5-bg: linear-gradient(135deg, rgba(251, 146, 60, 0.06) 0%, rgba(45, 212, 191, 0.03) 50%, rgba(96, 165, 250, 0.03) 100%);
-  --glass-l5-border: rgba(251, 146, 60, 0.1);
-  --glass-l5-shadow: 0 8px 40px rgba(251, 146, 60, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.03);
-
   /* DARK PAGE BACKGROUNDS */
   --bg-page: #0A0F1E;
   --bg-page-gradient: linear-gradient(180deg, #0A0F1E 0%, #0E1528 40%, #111B2E 70%, #0E1528 100%);
@@ -156,16 +122,16 @@ html[data-theme="dark"] {
   --bg-sunken: #080C18;
 
   /* DARK TEXT HIERARCHY */
-  --text-heading: #EDF2F7;
-  --text-subheading: #D6DDE6;
-  --text-body: #A8B8CA;
-  --text-secondary: #7E91A7;
-  --text-muted: #566A80;
-  --text-inverse: #0C1A2B;
+  --text-heading: #F8FAFC;
+  --text-subheading: #E2E8F0;
+  --text-body: #CBD5E1;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --text-inverse: #0F172A;
 
   /* DARK PRIMARY PALETTE */
-  --primary: #60A5FA;
-  --primary-subtle: rgba(96, 165, 250, 0.08);
+  --primary: #93C5FD;
+  --primary-subtle: rgba(147, 197, 253, 0.1);
 
   /* DARK ACCENT PALETTE */
   --accent: #FB923C;
@@ -192,16 +158,25 @@ html[data-theme="dark"] {
   --blob-1: rgba(251, 146, 60, 0.06);
   --blob-2: rgba(96, 165, 250, 0.04);
   --blob-3: rgba(45, 212, 191, 0.03);
+
+  /* DARK BUTTON & GRADIENT SYSTEM */
+  --btn-gradient: linear-gradient(135deg, #FB923C 0%, #F97316 100%);
+  --btn-gradient-hover: linear-gradient(135deg, #F97316 0%, #FB923C 100%);
+  --btn-shadow: rgba(251, 146, 60, 0.25);
+  --btn-shadow-hover: rgba(251, 146, 60, 0.4);
+
+  /* DARK COMPONENT MISSING TOKENS */
+  --text-nav: #F8FAFC;
+  --accent-light: #FDBA74;
+  --text-inverse-secondary: rgba(255, 255, 255, 0.6);
+
+  /* DARK FOOTER SPECIFIC */
+  --bg-footer: #050B14;
+  --text-footer: #FFFFFF;
+  --text-footer-muted: rgba(255, 255, 255, 0.6);
 }
 
-/* Base Glass Variable mapping to level 2 (Soft Glass) as default */
 :root {
-  --glass-bg: var(--glass-l2-bg);
-  --glass-blur: var(--glass-l2-blur);
-  --glass-border: var(--glass-l2-border);
-  --glass-shadow: var(--glass-l2-shadow);
-  --glass-radius: var(--glass-l2-radius);
-  
   /* Standard Aliases for project usage */
   --bg-primary: var(--bg-page);
   --bg-secondary: var(--bg-section-alt);

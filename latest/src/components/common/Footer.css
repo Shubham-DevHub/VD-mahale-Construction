@@ -1,7 +1,9 @@
 .footer {
-  background-color: var(--bg-dark-navy);
-  color: white;
+  background-color: var(--bg-footer);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--text-footer);
   padding-top: 100px;
+  position: relative;
 }
 
 .footer-grid {
@@ -17,11 +19,11 @@
   margin-bottom: 25px;
 }
 
-.logo-text { font-size: 26px; font-weight: 800; color: white; letter-spacing: 1px; }
-.logo-tag { font-size: 11px; color: rgba(255,255,255,0.5); margin-top: -5px; }
+.logo-text { font-size: 26px; font-weight: 800; color: var(--text-footer); letter-spacing: 1px; }
+.logo-tag { font-size: 11px; color: var(--text-footer-muted); margin-top: -5px; }
 
 .footer-desc {
-  color: rgba(255,255,255,0.6);
+  color: var(--text-footer-muted);
   font-size: 15px;
   line-height: 1.7;
   margin-bottom: 30px;
@@ -40,7 +42,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--text-footer);
   transition: var(--transition-normal);
 }
 
@@ -79,7 +81,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: rgba(255,255,255,0.6);
+  color: var(--text-footer-muted);
   font-size: 15px;
   transition: var(--transition-fast);
 }
@@ -101,20 +103,27 @@
 
 .footer-contact li {
   display: flex;
-  gap: 15px;
-  margin-bottom: 18px;
-  color: rgba(255,255,255,0.7);
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  color: var(--text-footer-muted);
   font-size: 14px;
+  align-items: flex-start;
 }
 
 .footer-contact li svg {
   flex-shrink: 0;
-  margin-top: 4px;
+  color: var(--accent-orange);
+  font-size: 18px;
+  margin-top: 2px; /* Slight offset for optical centering with first line */
+}
+
+.newsletter-box {
+  margin-top: var(--space-xl);
 }
 
 .newsletter-box p {
   font-size: 14px;
-  margin-bottom: 15px;
+  margin-bottom: var(--space-md);
   color: white;
   font-weight: 500;
 }
@@ -126,11 +135,11 @@
 
 .footer-form input {
   flex: 1;
-  background-color: var(--bg-tertiary);
-  border: 1px solid rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-sm);
   padding: 12px 15px;
-  color: var(--text-heading);
+  color: white;
   outline: none;
 }
 
@@ -154,7 +163,7 @@
   border-top: 1px solid rgba(255,255,255,0.08);
   padding: 25px 0;
   font-size: 14px;
-  color: rgba(255,255,255,0.5);
+  color: var(--text-footer-muted);
 }
 
 .bottom-flex {

@@ -22,7 +22,7 @@ const InitialLoader = () => {
         }
         return prev + 1;
       });
-    }, 20);
+    }, 50);
 
     // 2. Real window load event
     const handleLoad = () => {
@@ -60,7 +60,7 @@ const InitialLoader = () => {
             <motion.div 
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="loader-logo-glass"
+              className="loader-logo"
             >
               <span>VD</span>
             </motion.div>
@@ -70,7 +70,7 @@ const InitialLoader = () => {
               <p className="loader-subtitle">Engineering the Future</p>
             </div>
 
-            <div className="loader-progress-container glass-card">
+            <div className="loader-progress-container">
               <motion.div 
                 className="loader-progress-bar"
                 initial={{ width: 0 }}

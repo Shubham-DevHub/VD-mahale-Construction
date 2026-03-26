@@ -1,5 +1,5 @@
 .about-preview {
-  padding: 100px 0;
+  padding: var(--space-4xl) 0;
   background-color: var(--bg-primary);
   overflow: hidden;
 }
@@ -30,16 +30,18 @@
 
 .stat-floating {
   position: absolute;
-  top: -30px;
-  right: 0;
+  top: var(--space-xl);
+  right: -var(--space-md);
   background-color: var(--accent-orange);
-  color: white;
-  padding: 25px;
+  color: var(--text-inverse);
+  padding: var(--space-lg);
   border-radius: var(--radius-lg);
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 5;
+  border: 4px solid var(--bg-page);
+  box-shadow: 0 15px 35px rgba(245, 124, 32, 0.25);
 }
 
 .stat-floating .count {
@@ -57,19 +59,21 @@
 
 .image-overlay-card {
   position: absolute;
-  bottom: 0;
-  right: -20px;
-  background: var(--glass-bg);
-  backdrop-filter: blur(var(--glass-blur));
-  -webkit-backdrop-filter: blur(var(--glass-blur));
+  bottom: var(--space-xl);
+  right: -var(--space-xl);
   padding: 25px;
-  border-radius: var(--radius-lg);
+  z-index: 10;
+}
+
+.image-overlay-card .overlay-card-content {
   display: flex;
   align-items: center;
   gap: 20px;
-  z-index: 5;
-  border: 1px solid var(--glass-border);
-  box-shadow: var(--glass-shadow);
+  padding: 20px;
+  background-color: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-light);
 }
 
 
@@ -104,14 +108,15 @@
 }
 
 .section-title {
-  font-size: 2.75rem;
-  margin-bottom: 25px;
+  font-size: clamp(32px, 4vw, 44px);
+  margin-bottom: var(--space-md);
+  line-height: 1.2;
 }
 
 .section-desc {
   font-size: 1.1rem;
   color: var(--text-body);
-  margin-bottom: 40px;
+  margin-bottom: var(--space-xl);
 }
 
 

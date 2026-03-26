@@ -14,7 +14,7 @@ const ServiceCard = ({ icon: Icon, title, description, image, index }) => {
       onMouseMove={onMouseMove}
       onMouseLeave={handleMouseLeave}
       style={tiltStyles}
-      className="group glass-card glass-l2 h-full flex flex-col hover:border-accent/50 hover:shadow-glow-orange/10 transition-all duration-700 overflow-hidden relative"
+      className="group h-full flex flex-col hover:border-accent/50 hover:shadow-glow-orange/10 transition-all duration-700 overflow-hidden relative border border-white/5 bg-navy-900/50 rounded-2xl"
     >
       {/* Image Area */}
       <div className="h-52 relative overflow-hidden">

@@ -41,7 +41,7 @@ const MobileBottomNav = () => {
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[60] w-[90%] max-w-[400px] md:hidden"
         >
-          <div className="glass-card glass-l3 border-white/20 px-6 py-3 flex items-center justify-between shadow-2xl rounded-[2rem]">
+          <div className="border-white/20 px-6 py-3 flex items-center justify-between shadow-2xl rounded-[2rem] bg-navy-900/90">
             {navItems.map((item) => (
               <a
                 key={item.id}
@@ -78,7 +78,7 @@ const MobileBottomNav = () => {
             <motion.button
               whileTap={{ scale: 0.9, rotate: 15 }}
               onClick={toggleTheme}
-              className="w-10 h-10 rounded-full glass-card glass-l1 border-white/10 flex items-center justify-center text-accent shadow-glow-orange/20"
+              className="w-10 h-10 rounded-full border-white/10 flex items-center justify-center text-accent shadow-glow-orange/20"
             >
               {theme === 'dark' ? <FiSun size={18} /> : <FiMoon size={18} />}
             </motion.button>

@@ -29,7 +29,7 @@ const FloatingActions = () => {
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0, opacity: 0 }}
           whileTap={{ scale: 0.9 }}
-          className="md:hidden w-14 h-14 rounded-full glass-card glass-l3 border-white/20 flex items-center justify-center text-accent shadow-2xl relative"
+          className="md:hidden w-14 h-14 rounded-full border border-white/20 flex items-center justify-center text-accent shadow-2xl relative bg-dark"
         >
            <FiPhone size={24} />
         </motion.a>
@@ -63,7 +63,7 @@ const FloatingActions = () => {
             onClick={scrollToTop}
             whileHover={{ scale: 1.1, backgroundColor: 'var(--accent)' }}
             whileTap={{ scale: 0.9 }}
-            className="hidden md:flex w-14 h-14 rounded-full glass-card glass-l2 border-white/20 items-center justify-center text-white hover:text-white transition-colors shadow-2xl"
+            className="hidden md:flex w-14 h-14 rounded-full border border-white/20 items-center justify-center text-white hover:text-white transition-colors shadow-2xl bg-dark"
           >
             <FiArrowUp size={24} />
           </motion.button>

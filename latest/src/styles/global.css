@@ -39,18 +39,18 @@ body {
 .text-display-xl {
   font-family: var(--font-display);
   font-size: clamp(42px, 5.5vw, 72px);
-  font-weight: 800;
+  font-weight: 900;
   line-height: 1.05;
-  letter-spacing: -2px;
+  letter-spacing: -2.5px;
   color: var(--text-heading);
 }
 
 .text-display-lg {
   font-family: var(--font-display);
   font-size: clamp(36px, 4.5vw, 56px);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.1;
-  letter-spacing: -1.5px;
+  letter-spacing: -1.75px;
   color: var(--text-heading);
 }
 
@@ -132,173 +132,13 @@ p, .text-body {
    PREMIUM ELITE COMPONENTS
    =================================================================== */
 
-/* GLASS CARDS */
-[class*="glass-l"] {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Noise Texture Overlay */
-[class*="glass-l"]::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: var(--noise-texture);
-  pointer-events: none;
-  z-index: 0;
-  mix-blend-mode: overlay;
-  opacity: 0.5;
-}
-
-html[data-theme="dark"] [class*="glass-l"]::after {
-  opacity: 0.3;
-}
-
-.project-card-v2 {
-  background: var(--glass-l2-bg);
-  backdrop-filter: blur(var(--glass-l2-blur)) saturate(var(--glass-l2-saturate));
-  -webkit-backdrop-filter: blur(var(--glass-l2-blur)) saturate(var(--glass-l2-saturate));
-  border-radius: var(--glass-l2-radius);
-  overflow: hidden;
-  box-shadow: var(--glass-l2-shadow);
-  transition: transform 0.4s var(--transition-smooth), box-shadow 0.4s ease, border-color 0.3s ease;
-  border: 1px solid var(--glass-l2-border);
-}
-
-.glass-card {
-  background: var(--glass-l2-bg);
-  backdrop-filter: blur(var(--glass-l2-blur)) saturate(var(--glass-l2-saturate));
-  -webkit-backdrop-filter: blur(var(--glass-l2-blur)) saturate(var(--glass-l2-saturate));
-  border: 1px solid var(--glass-l2-border);
-  box-shadow: var(--glass-l2-shadow);
-  border-radius: var(--glass-l2-radius);
-  transition: transform 0.4s var(--transition-smooth), box-shadow 0.4s ease, border-color 0.3s ease;
-  overflow: hidden; /* Added for shine sweep */
-}
-
-/* Shine sweep on cards */
-.glass-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.04) 45%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.04) 55%, transparent 100%);
-  z-index: 2;
-  pointer-events: none;
-  transition: transform 0.8s ease;
-}
-
-.glass-card:hover::before {
-  transform: translateX(200%);
-}
-
-.glass-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-card-hover);
-  border-color: var(--accent-glow);
-}
+/* Layout Utilities */
 
 
-.glass-l1 { 
-  background: var(--glass-l1-bg); 
-  backdrop-filter: blur(var(--glass-l1-blur)); 
-  border: 1px solid var(--glass-l1-border); 
-  box-shadow: var(--glass-l1-shadow);
-  border-radius: var(--glass-l1-radius);
-}
 
-.glass-l3 { 
-  background: var(--glass-l3-bg); 
-  backdrop-filter: blur(var(--glass-l3-blur)) saturate(var(--glass-l3-saturate)); 
-  border: 1px solid var(--glass-l3-border); 
-  box-shadow: var(--glass-l3-shadow);
-  border-radius: var(--glass-l3-radius);
-}
 
-.service-card-v2 {
-  background: var(--glass-l2-bg);
-  backdrop-filter: blur(var(--glass-l2-blur)) saturate(var(--glass-l2-saturate));
-  -webkit-backdrop-filter: blur(var(--glass-l2-blur)) saturate(var(--glass-l2-saturate));
-  border-radius: var(--glass-l2-radius);
-  overflow: hidden;
-  box-shadow: var(--glass-l2-shadow);
-  transition: transform 0.4s var(--transition-smooth), box-shadow 0.4s ease, border-color 0.3s ease;
-  position: relative;
-  border: 1px solid var(--glass-l2-border);
-}
 
-.service-card-v2:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-card-hover);
-  border-color: var(--accent-glow);
-}
 
-/* GLASS INPUTS */
-.glass-input {
-  background: var(--glass-l1-bg);
-  backdrop-filter: blur(10px);
-  border: 1.5px solid var(--border-light);
-  border-radius: 12px;
-  height: 48px;
-  padding: 12px 18px;
-  font-size: 15px;
-  color: var(--text-heading);
-  transition: all 0.3s ease;
-  width: 100%;
-  outline: none;
-}
-
-.glass-input:focus {
-  border-color: var(--accent-glow);
-  box-shadow: 0 0 0 4px var(--accent-subtle);
-  background: var(--bg-elevated);
-}
-
-/* GLASS BUTTONS */
-.btn-glass-primary {
-  background: var(--accent-gradient);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 14px;
-  padding: 14px 28px;
-  color: #FFFFFF;
-  font-family: var(--font-heading);
-  font-weight: 600;
-  font-size: 15px;
-  box-shadow: var(--shadow-accent-glow);
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.3s ease;
-}
-
-.btn-glass-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(245, 124, 32, 0.4);
-  filter: brightness(1.1);
-}
-
-/* DECORATIVE BLOBS */
-.blob {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(80px);
-  pointer-events: none;
-  z-index: 0;
-  animation: blobFloat 10s ease-in-out infinite alternate;
-}
-
-.blob-1 { width: 450px; height: 450px; background: radial-gradient(circle, var(--blob-1) 0%, transparent 70%); top: -10%; right: -5%; }
-.blob-2 { width: 380px; height: 380px; background: radial-gradient(circle, var(--blob-2) 0%, transparent 70%); bottom: 10%; left: -5%; animation-duration: 14s; }
-
-@keyframes blobFloat {
-  0% { transform: translateY(0) scale(1); }
-  100% { transform: translateY(-40px) scale(1.1); }
-}
 
 /* Scrollbar Customization */
 ::-webkit-scrollbar { width: 6px; }
@@ -307,15 +147,16 @@ html[data-theme="dark"] [class*="glass-l"]::after {
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
 /* Layout Utilities */
+/* Layout Utilities */
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 var(--space-md);
 }
 
-.section-padding { padding: 100px 0; }
+.section-padding { padding: var(--space-4xl) 0; }
 
 @media (max-width: 768px) {
-  .section-padding { padding: 60px 0; }
-  .container { padding: 0 20px; }
+  .section-padding { padding: var(--space-2xl) 0; }
+  .container { padding: 0 var(--space-sm); }
 }

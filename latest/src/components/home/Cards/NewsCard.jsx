@@ -14,7 +14,7 @@ const NewsCard = ({ date, category, title, excerpt, image, delay = 0 }) => {
       onMouseMove={onMouseMove}
       onMouseLeave={handleMouseLeave}
       style={tiltStyles}
-      className="group glass-card glass-l2 hover:glass-l3 border-white/5 hover:border-accent/40 transition-all duration-500 overflow-hidden flex flex-col h-full shadow-2xl"
+      className="group border-white/5 hover:border-accent/40 transition-all duration-500 overflow-hidden flex flex-col h-full shadow-2xl bg-navy-900/50 border rounded-2xl"
     >
       {/* Header Image */}
       <div className="h-48 relative overflow-hidden">
@@ -23,7 +23,7 @@ const NewsCard = ({ date, category, title, excerpt, image, delay = 0 }) => {
           alt={title} 
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale-[0.4] group-hover:grayscale-0"
         />
-        <div className="absolute top-4 left-4 px-3 py-1 glass-card glass-l3 border-white/10 text-[10px] font-black uppercase tracking-widest text-accent z-10">
+        <div className="absolute top-4 left-4 px-3 py-1 border-white/10 text-[10px] font-black uppercase tracking-widest text-accent z-10 bg-black/40 border rounded-lg">
           {category}
         </div>
       </div>

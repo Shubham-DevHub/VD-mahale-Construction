@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiSettings, FiDroplet, FiZap, FiTruck } from 'react-icons/fi';
+import { FiSettings, FiDroplet, FiZap, FiTruck, FiMapPin } from 'react-icons/fi';
 import SectionHeader from '../common/SectionHeader';
 import { infrastructureData } from '../../data/infrastructureData';
 import './InfrastructureSection.css';
@@ -64,7 +64,9 @@ const InfrastructureSection = () => {
                     <div key={item.id} className="plant-card-mini">
                       <div className="plant-status">● {item.status}</div>
                       <h3>{item.name}</h3>
-                      <p className="plant-loc">📍 {item.location}</p>
+                      <p className="plant-loc">
+                        <FiMapPin className="text-orange" /> {item.location}
+                      </p>
                       <div className="plant-cap">
                         <span>Capacity:</span>
                         <strong>{item.capacity}</strong>

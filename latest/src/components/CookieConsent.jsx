@@ -28,7 +28,7 @@ const CookieConsent = () => {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="fixed bottom-28 md:bottom-10 left-6 md:left-10 z-[55] w-[calc(100%-3rem)] md:w-[400px]"
         >
-          <div className="glass-card glass-l3 border-white/20 p-6 md:p-8 shadow-3xl overflow-hidden relative">
+          <div className="border-white/20 p-6 md:p-8 shadow-3xl overflow-hidden relative bg-navy-900 border rounded-3xl">
             {/* Background Decor */}
             <div className="absolute -top-10 -right-10 w-32 h-32 bg-accent/10 rounded-full blur-2xl pointer-events-none" />
             
@@ -59,7 +59,7 @@ const CookieConsent = () => {
                   </button>
                   <button
                     onClick={() => setIsVisible(false)}
-                    className="flex-grow py-3 glass-card glass-l1 border-white/10 text-white font-bold text-xs uppercase tracking-widest hover:bg-white/5 transition-all text-center"
+                    className="flex-grow py-3 border-white/10 text-white font-bold text-xs uppercase tracking-widest hover:bg-white/5 transition-all text-center bg-white/5 border rounded-xl"
                   >
                     Manage
                   </button>

@@ -15,7 +15,7 @@ const TestimonialCard = ({ content, author, role, image, delay = 0 }) => {
       onMouseMove={onMouseMove}
       onMouseLeave={handleMouseLeave}
       style={tiltStyles}
-      className="group relative glass-card glass-l2 p-10 md:p-14 border-white/5 hover:border-accent/40 shadow-3xl transition-all duration-700 min-h-[400px] flex flex-col justify-center overflow-visible"
+      className="group relative p-10 md:p-14 border-white/5 hover:border-accent/40 shadow-3xl transition-all duration-700 min-h-[400px] flex flex-col justify-center overflow-visible bg-navy-900/50 rounded-[2.5rem]"
     >
       {/* Quote Icon */}
       <div className="absolute top-8 left-10 text-accent/10 transition-all duration-700 group-hover:text-accent/20 group-hover:scale-110">
@@ -32,7 +32,7 @@ const TestimonialCard = ({ content, author, role, image, delay = 0 }) => {
         <div className="flex flex-col items-center gap-6">
           {/* Avatar with Animated Border */}
           <div className="relative">
-            <div className="w-20 h-20 rounded-full glass-card glass-l4 p-1.5 border-accent/20 group-hover:border-accent transition-all duration-500 shadow-glow-orange/5">
+            <div className="w-20 h-20 rounded-full p-1.5 border-accent/20 group-hover:border-accent transition-all duration-500 shadow-glow-orange/5 bg-black/20">
               <img 
                 src={image} 
                 alt={author} 

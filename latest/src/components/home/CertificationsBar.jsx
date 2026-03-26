@@ -16,7 +16,7 @@ const CertificationsBar = () => {
             {certificationsData.map((item) => (
               <div key={item.id} className="cert-item">
                 <div className="cert-logo-box">
-                  <span style={{ fontWeight: 800, fontSize: '18px' }}>{item.name}</span>
+                  {item.logo ? <img src={item.logo} alt={item.name} /> : <span>{item.name.split(' ')[0]}</span>}
                 </div>
                 <div className="cert-text">
                   <strong>{item.name}</strong>

@@ -47,7 +47,7 @@ const Stats = () => {
         initial={{ y: 50, opacity: 0 }}
         animate={inView ? { y: 0, opacity: 1 } : {}}
         transition={{ duration: 0.8, cubicBezier: [0.16, 1, 0.3, 1] }}
-        className="glass-card glass-l3 border-white/20 p-8 sm:p-12 shadow-xl"
+        className="bg-elevated p-8 sm:p-12 shadow-xl border border-light rounded-3xl"
       >
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 relative">
           {stats.map((stat, index) => (
@@ -60,7 +60,7 @@ const Stats = () => {
               <div className="relative z-10">
                   <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-4 lg:gap-6 w-full">
                     {/* Icon with glow */}
-                    <div className="w-14 h-14 rounded-2xl glass-card glass-l1 border-white/10 flex items-center justify-center text-accent group-hover:scale-110 group-hover:shadow-glow-orange transition-all duration-500 shrink-0">
+                    <div className="w-14 h-14 rounded-2xl bg-secondary flex items-center justify-center text-accent group-hover:scale-110 group-hover:shadow-glow-orange transition-all duration-500 shrink-0">
                       <stat.icon size={24} />
                     </div>
                     

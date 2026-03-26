@@ -128,7 +128,7 @@ const Projects = () => {
           </div>
 
           {/* Filter Tabs - Dashboard Style */}
-          <div className="flex p-1.5 glass-card glass-l1 border-white/10 rounded-2xl overflow-x-auto no-scrollbar scroll-smooth" role="tablist" aria-label="Project Categories">
+          <div className="flex p-1.5 border-white/10 rounded-2xl overflow-x-auto no-scrollbar scroll-smooth bg-navy-900/40 border" role="tablist" aria-label="Project Categories">
             {categories.map((cat) => (
               <button
                 key={cat}
@@ -166,7 +166,7 @@ const Projects = () => {
                 className="col-span-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
               >
                 {[1, 2, 3, 4, 5, 6].map((i) => (
-                  <div key={i} className="glass-card glass-l1 border-white/5 h-[400px] p-6 space-y-4 animate-pulse">
+                  <div key={i} className="border-white/5 h-[400px] p-6 space-y-4 animate-pulse bg-navy-900/50 border rounded-2xl">
                     <div className="w-full h-48 bg-white/5 rounded-2xl" />
                     <div className="w-2/3 h-6 bg-white/5 rounded-lg" />
                     <div className="w-full h-4 bg-white/5 rounded-lg" />
@@ -210,7 +210,7 @@ const Projects = () => {
           <a
             href="#"
             aria-label="View our full portfolio of infrastructure projects"
-            className="group inline-flex items-center gap-4 px-10 py-5 glass-card glass-l1 border-white/20 text-white font-bold rounded-2xl hover:bg-white/10 hover:-translate-y-1 transition-all duration-300"
+            className="group inline-flex items-center gap-4 px-10 py-5 border-white/20 text-white font-bold rounded-2xl hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 bg-navy-900/30 border"
           >
             <span>View All Projects</span>
             <div className="w-8 h-8 rounded-full bg-accent flex items-center justify-center text-white group-hover:translate-x-1 transition-transform" aria-hidden="true">

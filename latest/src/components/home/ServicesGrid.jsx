@@ -24,7 +24,7 @@ const ServicesGrid = () => {
               data-aos-delay={index * 100}
             >
               <div className="service-img-wrapper">
-                <img src={service.image} alt={service.title} />
+                <img src={service.image} alt={service.title} loading="lazy" />
                 <div className="service-overlay">
                   <Link to={`/services/${service.slug}`} className="btn btn-primary btn-sm">Read More <FiArrowRight /></Link>
                 </div>
@@ -42,7 +42,7 @@ const ServicesGrid = () => {
         </div>
         
         <div className="text-center mt-60" data-aos="fade-up">
-          <Link to="/services" className="btn-glass-primary">
+          <Link to="/services" className="btn btn-primary">
             Explore All Expertise <FiArrowRight />
           </Link>
         </div>

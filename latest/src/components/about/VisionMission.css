@@ -14,33 +14,29 @@
 }
 
 .vision-c.year-box {
-  background: var(--glass-l1-bg);
-  backdrop-filter: blur(var(--glass-l1-blur));
-  -webkit-backdrop-filter: blur(var(--glass-l1-blur));
-  border: 1px solid var(--glass-l1-border);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-light);
   padding: 10px 25px;
   border-radius: 30px;
   font-family: var(--font-mono);
   font-weight: 700;
   color: var(--primary);
-  box-shadow: var(--glass-l1-shadow);
+  box-shadow: var(--shadow-sm);
 }
 
 .vision-card {
-  background: var(--glass-l2-bg);
-  backdrop-filter: blur(var(--glass-l2-blur)) saturate(var(--glass-l2-saturate));
-  -webkit-backdrop-filter: blur(var(--glass-l2-blur)) saturate(var(--glass-l2-saturate));
   padding: 50px 40px;
-  border-radius: var(--glass-l2-radius);
-  box-shadow: var(--glass-l2-shadow);
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
   text-align: center;
-  transition: transform 0.4s var(--transition-smooth), box-shadow 0.4s ease, border-color 0.3s ease;
+  transition: transform 0.4s var(--transition-smooth), box-shadow 0.4s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid var(--glass-l2-border);
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-md);
 }
 
 .vision-card:hover {
@@ -53,8 +49,9 @@
 
 
 .vision-card.active {
-  background-color: var(--primary-blue);
+  background: linear-gradient(135deg, var(--primary-blue), #1e3a8a);
   color: white;
+  box-shadow: 0 15px 40px rgba(10, 22, 40, 0.4);
 }
 
 .vision-card.active h3 { color: white; }

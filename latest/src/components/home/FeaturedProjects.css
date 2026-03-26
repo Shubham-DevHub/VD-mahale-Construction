@@ -20,15 +20,13 @@
 .filter-tab {
   padding: 10px 25px;
   border-radius: 30px;
-  border: 1px solid var(--glass-l1-border);
-  background: var(--glass-l1-bg);
-  backdrop-filter: blur(var(--glass-l1-blur));
-  -webkit-backdrop-filter: blur(var(--glass-l1-blur));
+  border: 1px solid var(--border-light);
+  background: var(--bg-elevated);
   font-family: var(--font-heading);
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s var(--transition-smooth);
   color: var(--text-secondary);
 }
 
@@ -54,14 +52,11 @@
 }
 
 .project-card-v2 {
-  background: var(--glass-l2-bg);
-  backdrop-filter: blur(var(--glass-l2-blur)) saturate(var(--glass-l2-saturate));
-  -webkit-backdrop-filter: blur(var(--glass-l2-blur)) saturate(var(--glass-l2-saturate));
-  border-radius: var(--glass-l2-radius);
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--glass-l2-shadow);
-  transition: transform 0.4s var(--transition-smooth), box-shadow 0.4s ease, border-color 0.3s ease;
-  border: 1px solid var(--glass-l2-border);
+  transition: transform 0.4s var(--transition-smooth), box-shadow 0.4s ease;
   position: relative;
 }
 
@@ -175,6 +170,7 @@
   -webkit-line-clamp: 2;
   line-clamp: 2;
   -webkit-box-orient: vertical;
+  color: var(--text-heading);
 }
 
 .project-progress {

@@ -14,18 +14,21 @@ const AboutPreview = () => {
             <div className="image-stack">
               <img 
                 src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=800" 
-                alt="Main Construction Site" 
-                className="img-main" 
+                alt="Legacy" 
+                className="about-img-main"
+                loading="lazy"
               />
               <div className="stat-floating shadow-lg">
                 <span className="count">25+</span>
                 <span className="label">Years of Excellence</span>
               </div>
-              <div className="image-overlay-card shadow-xl">
-                <FiCheckCircle className="text-orange" size={28} />
-                <div>
-                  <h4>150+ Projects</h4>
-                  <p>Delivered Successfully</p>
+              <div className="image-overlay-card">
+                <div className="overlay-card-content">
+                  <FiCheckCircle className="text-orange" size={28} />
+                  <div>
+                    <h4>150+ Projects</h4>
+                    <p>Delivered Successfully</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -64,7 +67,7 @@ const AboutPreview = () => {
                 Learn Our History <FiArrowRight />
               </Link>
               <div className="founder-sign">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Signature_of_Abraham_Lincoln.svg" alt="Signature" className="signature-img" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Signature_of_Abraham_Lincoln.svg" alt="Signature" className="signature-img" loading="lazy" />
                 <div className="founder-info">
                   <strong>V. D. Mahale</strong>
                   <span>Founder & Chairman</span>

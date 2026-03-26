@@ -13,7 +13,7 @@ const NotFound = () => {
       textAlign: 'center',
       padding: '20px'
     }}>
-      <div className="glass-card" style={{ padding: '60px', maxWidth: '600px' }}>
+      <div className="not-found-card" style={{ padding: '60px', maxWidth: '600px', backgroundColor: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: 'var(--radius-xl)' }}>
         <h1 style={{ fontSize: '120px', fontWeight: '800', margin: 0, color: 'var(--primary-blue)', opacity: 0.1 }}>404</h1>
         <h2 style={{ fontSize: '32px', marginBottom: '20px' }}>Page Not Found</h2>
         <p style={{ color: 'var(--text-light)', marginBottom: '40px', fontSize: '18px' }}>

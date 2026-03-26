@@ -14,7 +14,7 @@ const Skeleton = ({ width, height, borderRadius = '8px', className = '' }) => {
 };
 
 export const CardSkeleton = () => (
-  <div className="glass-card p-6 border-white/5 space-y-4">
+  <div className="p-6 border-white/5 space-y-4 bg-navy-900/50 border rounded-2xl">
     <Skeleton height="200px" width="100%" />
     <Skeleton height="24px" width="70%" />
     <Skeleton height="16px" width="40%" />

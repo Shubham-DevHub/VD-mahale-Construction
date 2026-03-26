@@ -13,7 +13,7 @@ const StatCard = ({ icon: Icon, value, suffix, label, delay = 0 }) => {
       onMouseMove={onMouseMove}
       onMouseLeave={handleMouseLeave}
       style={tiltStyles}
-      className="group relative glass-card glass-l2 hover:glass-l3 p-8 border-white/5 hover:border-accent/40 transition-all duration-500 flex flex-col items-center text-center shadow-2xl overflow-visible"
+      className="group relative p-8 border-white/5 hover:border-accent/40 transition-all duration-500 flex flex-col items-center text-center shadow-2xl overflow-visible bg-navy-900/50 rounded-2xl"
     >
       {/* Icon with Hover Glow */}
       <div className="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-accent mb-8 shadow-inner group-hover:scale-110 group-hover:shadow-glow-orange transition-all duration-500 border border-white/5">

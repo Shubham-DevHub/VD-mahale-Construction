@@ -49,11 +49,11 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`glass-navbar ${isScrolled ? 'scrolled' : ''}`}>
+      <nav className={`main-navbar ${isScrolled ? 'scrolled' : ''}`}>
         <div className="nav-container">
           {/* Brand/Logo */}
           <Link to="/" className="nav-brand">
-            <div className="brand-icon-glass">VD</div>
+            <div className="brand-icon">VD</div>
             <div className="brand-text">
               <span className="brand-name">MAHALE INFRA</span>
               <span className="brand-tag">Excellence in Engineering</span>
@@ -85,7 +85,7 @@ const Navbar = () => {
                         initial={{ opacity: 0, y: 10, scale: 0.98 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 10, scale: 0.98 }}
-                        className="mega-menu-glass"
+                        className="mega-menu"
                       >
                         <div className="mega-menu-content">
                           <div className="mega-services-grid">
@@ -107,11 +107,11 @@ const Navbar = () => {
                             ))}
                           </div>
                           <div className="mega-featured-panel">
-                            <div className="featured-inner glass-card">
+                            <div className="featured-inner">
                               <span className="feat-chip">Specialized</span>
                               <h3>Hybrid Annuity Projects</h3>
                               <p>Pioneering the next generation of public-private partnerships in Maharashtra.</p>
-                              <Link to="/projects" className="btn-glass-sm">
+                              <Link to="/projects" className="px-4 py-2 bg-accent text-white rounded-lg text-xs font-bold hover:bg-accent/80 transition-all flex items-center gap-2">
                                 Read Case Study <FiArrowRight />
                               </Link>
                             </div>
@@ -137,7 +137,7 @@ const Navbar = () => {
               Get Started <FiArrowRight />
             </Link>
             
-            <button className="mobile-toggle-glass hide-desktop" onClick={toggleMobileMenu}>
+            <button className="mobile-toggle hide-desktop" onClick={toggleMobileMenu}>
               <FiMenu />
             </button>
           </div>
@@ -151,7 +151,7 @@ const Navbar = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="search-overlay-glass"
+            className="search-overlay"
           >
             <div className="search-modal-container">
               <div className="search-header">
@@ -178,17 +178,17 @@ const Navbar = () => {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="mobile-panel-glass"
+            className="mobile-panel"
           >
             <div className="m-panel-header">
               <Link to="/" className="nav-brand" onClick={toggleMobileMenu}>
-                <div className="brand-icon-glass">VD</div>
+                <div className="brand-icon">VD</div>
               </Link>
               <button className="m-close-btn" onClick={toggleMobileMenu}><FiX /></button>
             </div>
 
             <div className="m-panel-body">
-              <div className="m-search-box glass-card">
+              <div className="m-search-box">
                 <FiSearch />
                 <input type="text" placeholder="Search..." />
               </div>
@@ -211,11 +211,11 @@ const Navbar = () => {
               </div>
 
               <div className="m-utility-grid">
-                <div className="m-util-card glass-card">
+                <div className="m-util-card">
                   <FiActivity />
                   <span>Safety Records</span>
                 </div>
-                <div className="m-util-card glass-card">
+                <div className="m-util-card">
                   <FiAward />
                   <span>Awards</span>
                 </div>

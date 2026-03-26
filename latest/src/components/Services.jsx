@@ -106,7 +106,7 @@ const Services = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-20 p-8 glass-card glass-l1 border-white/10 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4 text-center md:text-left shadow-lg"
+          className="mt-20 p-8 border-white/10 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4 text-center md:text-left shadow-lg bg-navy-900/60 rounded-[2rem]"
         >
           <div>
             <h4 className="text-xl font-bold mb-1">Looking for a specialized solution?</h4>

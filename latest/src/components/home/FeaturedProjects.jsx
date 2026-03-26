@@ -45,7 +45,7 @@ const FeaturedProjects = () => {
               data-aos-delay={index * 100}
             >
               <div className="project-img-box">
-                <img src={project.image} alt={project.title} />
+                <img src={project.image} alt={project.title} loading="lazy" />
                 <div className="project-badge">{project.status}</div>
                 <div className="project-overlay-v2">
                   <div className="overlay-content">

@@ -55,7 +55,7 @@ const Footer = () => {
                 <a 
                   key={i} 
                   href="#" 
-                  className="w-10 h-10 rounded-xl glass-card glass-l1 flex items-center justify-center text-gray-400 hover:text-white hover:border-accent hover:shadow-glow-orange transition-all duration-300"
+                  className="w-10 h-10 rounded-xl flex items-center justify-center text-gray-400 hover:text-white hover:border-accent hover:shadow-glow-orange transition-all duration-300 border border-white/5 bg-white/5"
                 >
                   <Icon size={18} />
                 </a>
@@ -87,7 +87,7 @@ const Footer = () => {
         {/* Contact Info Bar */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 py-10 border-y border-white/5 mb-12">
           <div className="flex items-center gap-4 justify-center md:justify-start">
-            <div className="w-12 h-12 rounded-2xl glass-card glass-l1 flex items-center justify-center text-accent shrink-0">
+            <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-accent shrink-0 border border-white/5 bg-white/5">
               <FiPhone size={20} />
             </div>
             <div>
@@ -96,7 +96,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex items-center gap-4 justify-center md:justify-start">
-            <div className="w-12 h-12 rounded-2xl glass-card glass-l1 flex items-center justify-center text-accent shrink-0">
+            <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-accent shrink-0 border border-white/5 bg-white/5">
               <FiMail size={20} />
             </div>
             <div>
@@ -105,7 +105,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex items-center gap-4 justify-center md:justify-start sm:col-span-2 lg:col-span-1">
-            <div className="w-12 h-12 rounded-2xl glass-card glass-l1 flex items-center justify-center text-accent shrink-0">
+            <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-accent shrink-0 border border-white/5 bg-white/5">
               <FiMapPin size={20} />
             </div>
             <div>
@@ -127,7 +127,7 @@ const Footer = () => {
           </div>
           <button 
             onClick={scrollToTop}
-            className="w-10 h-10 rounded-full glass-card glass-l1 flex items-center justify-center text-white hover:bg-accent hover:border-accent transition-all group"
+            className="w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-accent hover:border-accent transition-all group border border-white/5 bg-white/5"
           >
             <FiArrowUp className="group-hover:-translate-y-1 transition-transform" />
           </button>
