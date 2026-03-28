@@ -175,6 +175,17 @@
 .bottom-links {
   display: flex;
   gap: 25px;
+  align-items: center;
+}
+
+.footer-login-btn {
+  color: var(--accent-orange) !important;
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
+
+.footer-login-btn:hover {
+  filter: brightness(1.2);
 }
 
 @media (max-width: 1024px) {
