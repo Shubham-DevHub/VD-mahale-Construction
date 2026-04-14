@@ -90,6 +90,7 @@ const Footer = () => {
             <Link to="/privacy-policy">Privacy Policy</Link>
             <Link to="/terms">Terms & Conditions</Link>
             <Link to="/sitemap">Sitemap</Link>
+            <Link to="/login" className="footer-login-btn">ERP Login</Link>
           </div>
         </div>
       </div>
